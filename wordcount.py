@@ -70,13 +70,13 @@ def print_words(filename):
         print word, count[word]
 
 
-def count(word_tuple):
+def show_count(word_tuple):
     return word_tuple[1]
 
 
 def print_top(filename):
-    count = word_count(filename)
-    items = sorted(count.items(), key=count, reverse=True)
+    count1 = word_count(filename)
+    items = sorted(count1.items(), key=show_count, reverse=True)
     for item in items[:20]:
         print item[0], item[1]
 
